@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1019879781562",
+    "firebase_url": "https://selfilmindia-5e4bd.firebaseio.com",
+    "project_id": "selfilmindia-5e4bd",
+    "storage_bucket": "selfilmindia-5e4bd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1019879781562:android:fe237faddc1787aa92fe83",
+        "android_client_info": {
+          "package_name": "com.accelstackace.selfilmindia"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1019879781562-n34etb1pnutadua0up5ms9iroa27mhsn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.accelstackace.selfilmindia",
+            "certificate_hash": "e0e424c84a2d2ab9f9bda3dc6f177662e4a99226"
+          }
+        },
+        {
+          "client_id": "1019879781562-b16rd0sr5pj6cpp0tdv88ncf7e4qjvj4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBHl4fIDoBdj6o-Q9kvRfUuONeDFU_QsK4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1019879781562-b16rd0sr5pj6cpp0tdv88ncf7e4qjvj4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

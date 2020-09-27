@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/appcolorbg"
+    android:padding="0dp"
+    tools:context="com.accelstackace.selfilmindia.Accounts.Login_A">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/top_view"
+        android:visibility="gone"
+        android:background="@color/black"
+        android:alpha="0.4"
+        android:orientation="vertical"
+        />
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/appcolorbg"
+        android:id="@+id/login_details_RL1_id">
+        <TextView
+            android:layout_alignParentBottom="true"
+            android:layout_margin="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Terms of Use"
+            android:textColor="@color/white"></TextView>
+        <TextView
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Privacy policy"
+            android:textColor="@color/white"></TextView>
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:id="@+id/Goback"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_white_cross"
+            android:tint="@color/white"
+            android:padding="5dp"
+            android:layout_margin="5dp"
+            />
+        <LinearLayout
+            android:id="@+id/laylogo"
+            android:layout_marginTop="100dp"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/logo_image"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:transitionName="logo_image"
+                android:src="@drawable/selfilmlogopng"/>
+            <TextView
+                android:layout_below="@+id/logo_image"
+                android:id="@+id/logo_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="Sign up for SELFILM"
+                android:textSize="30dp"
+                android:transitionName="logo_text"
+                android:textColor="@color/white"/>
+            <TextView
+                android:id="@+id/slogan_name"
+                android:layout_width="wrap_content"
+                android:layout_below="@+id/logo_name"
+                android:layout_marginBottom="10dp"
+                android:textColor="#A9A9A9"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Create a profile,follow other creators \nbuild your fan following by creating \nyour own videos and earn money !" />
+
+        </LinearLayout>
+
+
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:id="@+id/login_title_txt"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:textSize="17dp"
+            android:textColor="@color/black"
+            android:gravity="center"
+            />
+
+        <RelativeLayout
+            android:layout_below="@+id/laylogo"
+            android:layout_marginTop="20dp"
+            android:id="@+id/login_details_RL3_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+
+            <HorizontalScrollView
+                android:id="@+id/login_details_scrollview_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:id="@+id/facebook_btn"
+                        android:layout_width="250dp"
+                        android:layout_height="75dp"
+                        android:padding="2dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="3dp"
+                        android:src="@drawable/ic_facebook" />
+
+                </LinearLayout>
+                    <LinearLayout
+                        android:layout_gravity="center"
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:id="@+id/google_btn"
+                            android:layout_width="250dp"
+                            android:layout_height="75dp"
+                            android:layout_margin="3dp"
+                            android:layout_toRightOf="@+id/facebook_btn"
+                            android:padding="2dp"
+                            android:src="@drawable/ic_goggle" />
+
+                    </LinearLayout>
+
+
+
+
+                </LinearLayout>
+
+
+            </HorizontalScrollView>
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/login_terms_condition_txt"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:paddingTop="15dp"
+            android:textColor="#A9A9A9"
+            android:layout_below="@+id/login_details_RL3_id"
+            android:text="By signing up, you confirm that you agree to our \n Terms of Use and have read and understood \n our Privacy Policy."
+            android:gravity="center"
+            />
+
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

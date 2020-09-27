@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="0dp"
+        app:cardBackgroundColor="@color/black">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/mainlayout">
+
+
+          <com.google.android.exoplayer2.ui.PlayerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/playerview"
+            android:layout_margin="0dp"
+            android:padding="0dp"
+            app:show_timeout="1000"
+            app:resize_mode="fixed_width"
+            android:background="@color/black"
+            app:shutter_background_color="@color/black"
+            app:controller_layout_id="@layout/item_player_controler"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/side_menu"
+                android:layout_marginRight="10dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="120dp"
+                android:layout_alignParentRight="true"
+                android:gravity="center_horizontal">
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:id="@+id/mutelay"
+                    android:gravity="center_horizontal"
+                    android:layout_marginTop="20dp">
+
+                    <ImageView
+                        android:id="@+id/muteimg"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:padding="5dp"
+                        android:background="@drawable/circleshape"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/ic_baseline_music_note_24" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mute"
+                        android:id="@+id/mutetxt"
+                        android:shadowColor="@color/black"
+                        android:shadowDx="1"
+                        android:shadowDy="1"
+                        android:shadowRadius="3"
+                        android:textSize="13dp"
+                        android:textColor="@color/white"
+                        android:textStyle="normal"/>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:id="@+id/reportlay"
+                    android:gravity="center_horizontal"
+                    android:layout_marginTop="10dp">
+
+                    <ImageView
+                        android:id="@+id/report_image"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:padding="5dp"
+                        android:background="@drawable/circleshape"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/ic_baseline_visibility_off_24" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Report"
+                        android:id="@+id/report_text"
+                        android:shadowColor="@color/black"
+                        android:shadowDx="1"
+                        android:shadowDy="1"
+                        android:shadowRadius="3"
+                        android:textSize="13dp"
+                        android:textColor="@color/white"
+                        android:textStyle="normal"/>
+
+                </LinearLayout>
+
+
+
+
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:id="@+id/like_layout"
+                    android:gravity="center_horizontal"
+                    android:layout_marginTop="10dp">
+
+                    <ImageView
+                        android:id="@+id/like_image"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:padding="5dp"
+                        android:background="@drawable/circleshape"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/ic_like" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="likes"
+                        android:id="@+id/like_txt"
+                        android:shadowColor="@color/black"
+                        android:shadowDx="1"
+                        android:shadowDy="1"
+                        android:shadowRadius="3"
+                        android:textSize="13dp"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"/>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:id="@+id/comment_layout"
+                    android:gravity="center_horizontal"
+                    android:layout_marginTop="10dp">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:padding="5dp"
+                        android:background="@drawable/circleshape"
+                        android:scaleType="fitCenter"
+                        android:id="@+id/comment_image"
+                        android:tint="@color/white"
+                        android:src="@drawable/ic_comment"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="comment"
+                        android:textSize="13dp"
+                        android:id="@+id/comment_txt"
+                        android:shadowColor="@color/black"
+                        android:shadowDx="1"
+                        android:shadowDy="1"
+                        android:shadowRadius="3"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:id="@+id/shared_layout"
+                    android:gravity="center_horizontal"
+                    android:layout_marginTop="10dp">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:padding="5dp"
+                        android:background="@drawable/circleshape"
+                        android:src="@drawable/ic_share"
+                        android:tint="@color/white"
+                        android:scaleType="fitCenter"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Share"
+                        android:shadowColor="@color/black"
+                        android:shadowDx="1"
+                        android:shadowDy="1"
+                        android:shadowRadius="3"
+                        android:textSize="13dp"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="15dp"
+                android:orientation="vertical"
+                android:layout_marginRight="80dp"
+                android:layout_marginBottom="35dp">
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:scaleType="centerCrop"
+                            android:id="@+id/user_pic"
+                            android:src="@drawable/profile_image_placeholder"/>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Username"
+                        android:textSize="16dp"
+                        android:id="@+id/username"
+                        android:shadowColor="@color/black"
+                        android:shadowDx="1"
+                        android:layout_marginLeft="8dp"
+                        android:layout_gravity="center"
+                        android:shadowDy="1"
+                        android:shadowRadius="3"
+                        android:textColor="@color/white"/>
+                    <ImageView
+                        android:layout_width="18dp"
+                        android:visibility="gone"
+                        android:layout_marginLeft="8dp"
+                        android:layout_height="18dp"
+                        android:layout_gravity="center"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:scaleType="fitCenter"
+                        android:id="@+id/varified_btn"
+                        android:src="@drawable/ic_verified"/>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Description"
+                    android:textSize="13dp"
+                    android:id="@+id/desc_txt"
+                    android:maxLines="3"
+                    android:shadowColor="@color/black"
+                    android:shadowDx="1"
+                    android:layout_marginLeft="8dp"
+                    android:shadowDy="1"
+                    android:ellipsize="end"
+                    android:shadowRadius="3"
+                    android:textColor="@color/white"/>
+
+                <LinearLayout
+                    android:layout_marginLeft="8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="10dp">
+
+                    <ImageView
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:src="@drawable/ic_music"
+                        android:tint="@color/white"
+                        android:scaleType="fitCenter"/>
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="Indian sound or Song Name"
+                    android:textSize="14dp"
+                    android:id="@+id/sound_name"
+                    android:ellipsize="marquee"
+                    android:scrollHorizontally="true"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:singleLine="true"
+                    android:shadowColor="@color/black"
+                    android:shadowDx="1"
+                    android:shadowDy="1"
+                    android:shadowRadius="3"
+                    android:layout_marginLeft="7dp"
+                    android:textColor="@color/white"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="5dp"
+                android:orientation="vertical"
+                android:id="@+id/sound_image_layout"
+                android:background="@drawable/ic_black_disk"
+                android:layout_marginBottom="35dp"
+                android:gravity="center">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/sound_image" />
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

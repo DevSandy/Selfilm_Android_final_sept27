@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/transparent"
+    android:clickable="true"
+    android:id="@+id/reportscreen"
+    android:fitsSystemWindows="true"
+    tools:context=".reportfragment">
+
+    <androidx.percentlayout.widget.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:background="@color/appcolorbg"
+            android:layout_alignParentBottom="true"
+            android:layout_height="0dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/appcolorbg"
+                android:id="@+id/top_layout">
+
+                <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:id="@+id/Goback"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/ic_white_cross"
+                    android:tint="@color/white"
+                    android:padding="5dp"
+                    android:layout_margin="5dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:id="@+id/report_title"
+                    android:text="Off/Offencive Button"
+                    android:textColor="@color/white"
+                    android:layout_centerInParent="true"/>
+
+            </RelativeLayout>
+            <LinearLayout
+                android:padding="10dp"
+                android:orientation="vertical"
+                android:layout_below="@+id/top_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="If you find this post/content offensive,abusive,explicit or obscene, you can continue  to remove the content from your account"
+                    android:textColor="@color/white"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textSize="16dp"></TextView>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+                    <Button
+                        android:layout_margin="20dp"
+                        android:layout_width="wrap_content"
+                        android:text="Off"
+                        android:id="@+id/offbutton"
+                        android:textColor="@color/black"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/follow_btn_bg"></Button>
+                    <Button
+                        android:layout_margin="20dp"
+                        android:id="@+id/reportbtn"
+                        android:layout_width="wrap_content"
+                        android:text="Report"
+                        android:textColor="@color/black"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/follow_btn_bg"></Button>
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+        </RelativeLayout>
+    </androidx.percentlayout.widget.PercentRelativeLayout>
+
+</FrameLayout>

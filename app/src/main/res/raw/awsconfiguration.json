@@ -1,0 +1,21 @@
+{
+  "UserAgent": "MobileHub/1.0",
+  "Version": "1.0",
+  "CredentialsProvider": {
+    "CognitoIdentity": {
+      "Default": {
+        "PoolId": "ap-south-1:82493824-7556-41a4-96d6-93d653c1d8d2",
+        "Region": "ap-south-1"
+      }
+    }
+  },
+  "IdentityManager": {
+    "Default": {}
+  },
+  "S3TransferUtility": {
+    "Default": {
+      "Bucket": "selfilmandroid-deployments-mobilehub-1573813982",
+      "Region": "ap-south-1"
+    }
+  }
+}
